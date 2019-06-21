@@ -1,3 +1,3 @@
-# freeCodeCamp Projects
+# freeCodeCamp Project
 
-## Responsive Web Design Projects: Survey Form
+## Responsive Web Design Project 2: Survey Form
