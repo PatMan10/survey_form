@@ -4,30 +4,48 @@ html {
   background-color: wheat;
 }
 
-h1, p {
-  text-align: center;
-}
-
 body {
   width: 90%;
   margin: auto;
 }
 
+h1, p {
+  text-align: center;
+}
+
 form {
-  background-color: white;
+  background-color: #F0F8FF;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 1%;
 }
 
+input[type="text"] {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+input[type="email"] {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+input[type="number"] {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+select {
+  border-radius: 3px;
+  padding: 3px;
+}
+
+textarea {
+  max-width: 100%;
+}
+
 .row {
   margin-bottom: 20px;
-}
-
-.col-l {
-}
-
-.col-r {
 }
 
 #number {
