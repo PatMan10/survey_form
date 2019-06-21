@@ -7,23 +7,28 @@ html {
 .row {
   width: 100%;
   background-color: red;
+  display: inline-block;
 }
 
 .col-l {
-  width: 50%;
+  width: 40%;
+  position: relative;
+  left: 9%;
   background-color: skyblue;
   display: inline-block;
 }
 
+.col-l > * {
+  float: right;
+}
+
 .col-r {
-  width: 50%;
+  width: 40%;
+  position: relative;
+  right: 9%;
   background-color: pink;
   float: right;
   display: inline-block;
-}
-
-#name-label {
-  float: right;
 }
 
 h1, p {
@@ -43,8 +48,11 @@ form {
 }
 
 #number {
-  width: 90px;
-  margin: auto;
+  min-width: 90px;
+}
+
+#submit {
+  background-color: green;
 }
 
 @media (min-width: 768) {
