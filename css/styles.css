@@ -20,19 +20,12 @@ form {
   border-radius: 1%;
 }
 
-input[type="text"] {
-  border-radius: 5px;
-  padding: 3px;
-}
-
+input[type="text"],
+input[type="number"],
 input[type="email"] {
   border-radius: 5px;
   padding: 3px;
-}
-
-input[type="number"] {
-  border-radius: 5px;
-  padding: 3px;
+  min-width: 180px;
 }
 
 select {
@@ -48,8 +41,8 @@ textarea {
   margin-bottom: 20px;
 }
 
-#number {
-  min-width: 90px;
+.col-l {
+  margin-bottom: 5px;
 }
 
 #submit {
@@ -65,23 +58,29 @@ textarea {
     width: 100%;
     display: inline-block;
   }
-  
-  .col-l {
+ 
+  .col-l,
+  .col-r {
     width: 40%;
     position: relative;
-    left: 9%;
     display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .col-l {
+    left: 9%;
+  }
+
+  .col-r {
+    right: 9%;
+    float: right;
+  }
+
+  .col-l > label {
+    text-align: right;
   }
   
   .col-l > * {
     float: right;
-  }
-  
-  .col-r {
-    width: 40%;
-    position: relative;
-    right: 9%;
-    float: right;
-    display: inline-block;
   }
 }
