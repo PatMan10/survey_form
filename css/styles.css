@@ -4,33 +4,6 @@ html {
   background-color: wheat;
 }
 
-.row {
-  width: 100%;
-  background-color: red;
-  display: inline-block;
-}
-
-.col-l {
-  width: 40%;
-  position: relative;
-  left: 9%;
-  background-color: skyblue;
-  display: inline-block;
-}
-
-.col-l > * {
-  float: right;
-}
-
-.col-r {
-  width: 40%;
-  position: relative;
-  right: 9%;
-  background-color: pink;
-  float: right;
-  display: inline-block;
-}
-
 h1, p {
   text-align: center;
 }
@@ -47,16 +20,50 @@ form {
   border-radius: 1%;
 }
 
+.row {
+  margin-bottom: 20px;
+}
+
+.col-l {
+}
+
+.col-r {
+}
+
 #number {
   min-width: 90px;
 }
 
 #submit {
-  background-color: green;
+  height: 35px;
+  width: 70px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
 }
 
-@media (min-width: 768) {
-  html {
-    background-color: red;
+@media (min-width: 600px) {
+  .row {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .col-l {
+    width: 40%;
+    position: relative;
+    left: 9%;
+    display: inline-block;
+  }
+  
+  .col-l > * {
+    float: right;
+  }
+  
+  .col-r {
+    width: 40%;
+    position: relative;
+    right: 9%;
+    float: right;
+    display: inline-block;
   }
 }
