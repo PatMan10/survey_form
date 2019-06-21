@@ -1,5 +1,54 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: wheat;
+}
+
+.row {
+  width: 100%;
   background-color: red;
+}
+
+.col-l {
+  width: 50%;
+  background-color: skyblue;
+  display: inline-block;
+}
+
+.col-r {
+  width: 50%;
+  background-color: pink;
+  float: right;
+  display: inline-block;
+}
+
+#name-label {
+  float: right;
+}
+
+h1, p {
+  text-align: center;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+form {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 1%;
+}
+
+#number {
+  width: 90px;
+  margin: auto;
+}
+
+@media (min-width: 768) {
+  html {
+    background-color: red;
+  }
 }
