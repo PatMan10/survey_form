@@ -34,7 +34,8 @@ select {
 }
 
 textarea {
-  max-width: 100%;
+  width: 100%;
+  border: 1px solid gray;
 }
 
 .row {
@@ -51,6 +52,7 @@ textarea {
   display: block;
   margin: auto;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
